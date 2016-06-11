@@ -10,9 +10,10 @@
 		60B41B241BDCB70D00F8B9CB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B41B231BDCB70D00F8B9CB /* WebKit.framework */; };
 		60B41B291BDCB73900F8B9CB /* PonyDebugger.framework in Resources */ = {isa = PBXBuildFile; fileRef = 60B41B251BDCB72B00F8B9CB /* PonyDebugger.framework */; };
 		60B41B2A1BDCB73900F8B9CB /* SocketRocket.framework in Resources */ = {isa = PBXBuildFile; fileRef = 60B41B261BDCB72B00F8B9CB /* SocketRocket.framework */; };
+		60DBBB911D0CAEDF002ACB39 /* PonyDServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DBBB901D0CAEDF002ACB39 /* PonyDServer.swift */; };
+		60DBBB931D0CB1EE002ACB39 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DBBB921D0CB1EE002ACB39 /* RootViewController.swift */; };
 		60E60D461BDCACE200C01925 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E60D451BDCACE200C01925 /* AppDelegate.m */; };
 		60E60D491BDCACE200C01925 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E60D481BDCACE200C01925 /* main.m */; };
-		60E60D4C1BDCACE200C01925 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E60D4B1BDCACE200C01925 /* ViewController.m */; };
 		60E60D4E1BDCACE200C01925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E60D4D1BDCACE200C01925 /* Assets.xcassets */; };
 		60E60D511BDCACE200C01925 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E60D4F1BDCACE200C01925 /* Main.storyboard */; };
 		60E60D601BDCAD7900C01925 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E60D5F1BDCAD7900C01925 /* main.m */; };
@@ -29,12 +30,13 @@
 		60B41B231BDCB70D00F8B9CB /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		60B41B251BDCB72B00F8B9CB /* PonyDebugger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PonyDebugger.framework; path = frameworks/PonyDebugger.framework; sourceTree = SOURCE_ROOT; };
 		60B41B261BDCB72B00F8B9CB /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketRocket.framework; path = frameworks/SocketRocket.framework; sourceTree = SOURCE_ROOT; };
+		60DBBB8F1D0CAEDF002ACB39 /* PonyDebugger-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PonyDebugger-Bridging-Header.h"; sourceTree = "<group>"; };
+		60DBBB901D0CAEDF002ACB39 /* PonyDServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PonyDServer.swift; sourceTree = "<group>"; };
+		60DBBB921D0CB1EE002ACB39 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		60E60D411BDCACE200C01925 /* PonyDebugger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PonyDebugger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E60D441BDCACE200C01925 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		60E60D451BDCACE200C01925 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		60E60D481BDCACE200C01925 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		60E60D4A1BDCACE200C01925 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		60E60D4B1BDCACE200C01925 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		60E60D4D1BDCACE200C01925 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60E60D501BDCACE200C01925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60E60D521BDCACE200C01925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,12 +100,13 @@
 				60E60D771BDCAE9F00C01925 /* From CocoaPods */,
 				60E60D441BDCACE200C01925 /* AppDelegate.h */,
 				60E60D451BDCACE200C01925 /* AppDelegate.m */,
-				60E60D4A1BDCACE200C01925 /* ViewController.h */,
-				60E60D4B1BDCACE200C01925 /* ViewController.m */,
 				60E60D4D1BDCACE200C01925 /* Assets.xcassets */,
 				60E60D4F1BDCACE200C01925 /* Main.storyboard */,
 				60E60D521BDCACE200C01925 /* Info.plist */,
 				60E60D471BDCACE200C01925 /* Supporting Files */,
+				60DBBB901D0CAEDF002ACB39 /* PonyDServer.swift */,
+				60DBBB8F1D0CAEDF002ACB39 /* PonyDebugger-Bridging-Header.h */,
+				60DBBB921D0CB1EE002ACB39 /* RootViewController.swift */,
 			);
 			path = PonyDebugger;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 		60E60D391BDCACE200C01925 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Orta;
 				TargetAttributes = {
@@ -320,7 +324,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60E60D4C1BDCACE200C01925 /* ViewController.m in Sources */,
+				60DBBB931D0CB1EE002ACB39 /* RootViewController.swift in Sources */,
+				60DBBB911D0CAEDF002ACB39 /* PonyDServer.swift in Sources */,
 				60E60D491BDCACE200C01925 /* main.m in Sources */,
 				60E60D461BDCACE200C01925 /* AppDelegate.m in Sources */,
 			);
@@ -449,6 +454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -458,6 +464,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.orta.PonyDebugger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PonyDebugger/PonyDebugger-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -465,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -474,6 +483,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.orta.PonyDebugger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PonyDebugger/PonyDebugger-Bridging-Header.h";
 			};
 			name = Release;
 		};
